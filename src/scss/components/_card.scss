@@ -1,0 +1,44 @@
+.card {
+  background-image: linear-gradient(transparent 14rem, $color-white 14rem),
+    url('../images/bg-pattern-card.svg');
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 86.9%;
+  min-width: 32.6rem;
+  max-width: 35rem;
+  padding: 8.7rem 0 0 0;
+  border-radius: 1.5rem;
+  box-shadow: 0px 50px 100px -20px rgba(8, 70, 94, 0.504835);
+
+  &__photo {
+    border-radius: 50%;
+    border: 0.5rem solid $color-white;
+    margin-bottom: 2.1rem;
+  }
+
+  &__location {
+    font-size: 1.4rem;
+    line-height: 1.408rem;
+
+    margin: 1.3rem 0 2.7rem;
+  }
+
+  &__stats {
+    display: flex;
+    justify-content: space-between;
+    padding: 2.4rem 5.2rem 2.4rem 4.1rem;
+    border-top: 0.1rem solid #E8E9EC;
+
+    @include bp-large {
+      padding: 2.4rem 5.4rem 2.4rem 4.7rem;
+    }
+  }
+
+  &__stat-text {
+    letter-spacing: 0.15rem;
+    margin: 0.9rem 0 0.3rem;
+  }
+}

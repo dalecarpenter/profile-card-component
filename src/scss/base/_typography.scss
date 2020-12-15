@@ -1,4 +1,19 @@
 body {
   font-family: 'Kumbh Sans', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.006rem;
+  color: $color-blue-light;
+  text-align: center;
+}
+
+.heading {
   font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 1.811rem;
+  color: $color-blue-dark;
+
+  & span {
+    font-weight: 400;
+  }
 }

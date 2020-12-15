@@ -9,3 +9,18 @@
 html {
   font-size: 62.5%;
 }
+
+body {
+  background-color: $color-cyan;
+  background-image: url('../images/bg-pattern-top.svg'),
+    url('../images/bg-pattern-bottom.svg');
+  background-position: top -35.7rem left -41.2rem, top 35.7rem right -41.1rem;
+  background-repeat: no-repeat;
+  background-size: 62.2rem;
+  transition: all 1s ease-in-out;
+
+  @include bp-large {
+    background-size: 97.8rem;
+    background-position: top -50.9rem left -28.3rem, top 37.5rem right -23rem;
+  }
+}
